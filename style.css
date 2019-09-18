@@ -1,0 +1,22 @@
+.sushi{
+	margin:4px;
+	display:inline-flex;
+}
+
+.sushi > form{
+	display:inline-flex;
+}
+
+.marquee p {
+	margin:0;
+	padding-left:600px;
+	display:inline-block;
+	white-space:nowrap;
+	animation-name:marquee; animation-timing-function:linear;
+	animation-duration:15s; animation-iteration-count:infinite;
+}
+
+@keyframes marquee {
+	from   { transform: translate(0%);} 
+	99%,to { transform: translate(-100%);}
+}
